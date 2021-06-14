@@ -1,0 +1,9 @@
+main:
+- identifier: home
+  name: Accueil
+  url: /
+  weight: 1
+- identifier: contact
+  name: Contact
+  url: contact
+  weigh: 2
