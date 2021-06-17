@@ -1,0 +1,13 @@
+version: "3.9"
+
+services:
+  hugo_dev_server:
+    build:
+        context: ./docker-image/
+        args:
+            HUGO_VERSION: 0.83.1
+    command: server
+    volumes:
+        - "./website:/src"
+    ports:
+        - "1313:1313"
