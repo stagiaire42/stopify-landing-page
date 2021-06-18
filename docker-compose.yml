@@ -1,11 +1,11 @@
 version: "3.9"
 
 services:
-  hugo_dev_server:
+  dev_server:
     build:
         context: ./docker-image/
         args:
-            HUGO_VERSION: 0.79.0
+            HUGO_VERSION: 0.81.0
     command: server
     volumes:
         - "./website:/src"
