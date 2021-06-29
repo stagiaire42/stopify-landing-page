@@ -22,7 +22,7 @@ jobs:
           extended: true
 
       - name: Build
-        run: hugo --minify -s website
+        run: hugo --minify -e gh-pages -s website
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
